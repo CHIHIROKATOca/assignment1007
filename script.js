@@ -5,7 +5,7 @@ onload =function() {
         requiredEmail : 'email is required',
         requiredCity : 'city is required',
         requiredJoinDate : 'joindate is required',
-        futureJoinDate :"Please select the past",
+        futureJoinDate :"Please select a date before today",
         requiredPostalCode : 'postalcode is required',
         requiredAvailability : 'Please select availability day',
     }
