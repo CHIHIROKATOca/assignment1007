@@ -1,0 +1,123 @@
+
+
+.container{
+    width: 900px;
+    height: auto;
+    margin: 50px;
+    padding: 50px;
+}
+
+#table td{
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: rgb(240, 255, 243);
+}
+
+#btn-submit, #btn-show{
+    padding: 5px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+
+input{
+    width: 50%;
+    height: 100%;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #333334;
+    font-family: 'Oxygen', sans-serif;
+    padding: 100px;
+}
+
+.container .header{
+    background-color: #cbcbcb;
+    text-align:center;
+    padding:10px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+
+}
+.container form{
+    width: 500px;
+    margin-left: 0;
+    padding: 0;
+
+}
+.form-control{
+    margin: 0;
+    padding: 0;
+}
+.form-control label{
+    margin-bottom:5px;
+    margin: 0;
+    padding: 0;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    }
+.error{
+    display: flex;
+    margin-top: 10px;
+}
+.form-control i {
+    right: 0px;
+    display:none;
+    margin-right: 5px;
+}
+.form-control.success input {
+    border-color: #059d05;
+}
+.form-control.error input {
+    border-color: red;
+}
+.form-control.success .fa-check{
+    color:#059d05;
+    display:block;
+}
+.form-control.error .fa-times{
+    color:red;
+    display:block;
+}
+.form-control small{
+    color:red;
+    left:0;
+    display:none;
+}
+.form-control.error small{
+    display:block;
+}
+button {
+    background-color: #cbcbcb;
+    border:none;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-size:16px;
+    width: 100%;
+}
+.form-contorol{
+    display: block;
+    margin-top: 15px;
+}
+
+.btn-unabled{
+    background-color: gray;
+}
+
+.form-row{
+    margin-bottom: 80px;
+}
