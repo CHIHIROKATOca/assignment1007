@@ -5,6 +5,7 @@ onload =function() {
         requiredEmail : 'email is required',
         requiredCity : 'city is required',
         requiredJoinDate : 'joindate is required',
+        futureJoinDate :"Please select the past",
         requiredPostalCode : 'postalcode is required',
         requiredAvailability : 'Please select availability day',
     }
@@ -115,6 +116,7 @@ onload =function() {
         showEmployees();
     })
 
+
     const validateForm = () => {
         //username
         if (fname.value === '') {
@@ -141,23 +143,27 @@ onload =function() {
             //everything goes well
             setSuccessFrom(email);
         }
-
+        //city
         if (city.value === '') {
             setErrorForm(city, ERROR_MESSAGES.requiredCity);
         } else {
             setSuccessFrom(city);
         }
 
-        //password
+        //address
         if (address.value === '') {
             setErrorForm(address, ERROR_MESSAGES.requiredPostalCode);
         } else {
             setSuccessFrom(address);
         }
 
+        //date
+        var day = Date.now();
         if (date.value === '') {
             setErrorForm(date, ERROR_MESSAGES.requiredJoinDate);
-        } else {
+        } else if(date.valueAsNumber > day) {
+            setErrorForm(date, ERROR_MESSAGES.futureJoinDate);
+        }else{
             setSuccessFrom(date);
         }
 
