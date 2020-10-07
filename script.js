@@ -49,7 +49,6 @@ onload =function() {
        }
        //add this object to array
        employees.push(newEmployee);
-    //    document.querySelector('form').reset();
        avalibalities = [];
     }
 
@@ -181,6 +180,7 @@ onload =function() {
         formControl.classList.add('error');
         const small = formControl.querySelector('small');
         small.textContent = message;
+        // document.querySelector('form').reset();
     }
 
     const setSuccessFrom = (input) => {
@@ -189,11 +189,10 @@ onload =function() {
         formControl.classList.add('success');
         addEmployee2;
 
-        var addEmployee2 = function() {
+        var addEmployee2 = function(addEmployee2) {
             addEmployee();
             var counter = 0;
             return function() {
-                console.log( "count :" + counter );
                 return counter+=1;
             };
         };
