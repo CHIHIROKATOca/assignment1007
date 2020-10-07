@@ -46,10 +46,12 @@ onload =function() {
            city:city.value,
            postalcode:address.value,
            avalibalitiy:avalibalities
+
        }
        //add this object to array
        employees.push(newEmployee);
        avalibalities = [];
+       document.querySelector("form").reset();
     }
 
     function showEmployees () {
@@ -165,7 +167,7 @@ onload =function() {
         }else{
             setSuccessFrom(date);
         }
-
+        //avalibalitiy
         if (avalibalitiy.value === '') {
             setErrorForm(avalibalitiy, ERROR_MESSAGES.requiredAvailability);
         } else {
